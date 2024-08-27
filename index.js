@@ -81,6 +81,6 @@ server.applyMiddleware({
     path: '/graphql'
 });
 
-httpServer.listen({ port }, () => {
+httpServer.listen({ port, host: '0.0.0.0' }, () => {
     console.log(`🚀  Server ready at ${port} ${server.graphqlPath}`);
 })

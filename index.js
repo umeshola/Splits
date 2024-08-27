@@ -4,7 +4,6 @@ import typeDefs from "./logic/schemaGQL.js";
 import mongoose from "mongoose";
 import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv';
-import cors from 'cors'
 import express from 'express';
 import http from 'http';
 import path from 'path';
@@ -14,9 +13,8 @@ const port = process.env.PORT || 4000;
 const app = express();
 const httpServer = http.createServer(app);
 
-if (process.env.NODE_ENV !== "production") {
-    dotenv.config()
-}
+dotenv.config()
+
 const MONGO_URI = process.env.DATABASE_URL;
 const SECRATE = process.env.SECRATE;
 
@@ -78,6 +76,8 @@ server.applyMiddleware({
     app,
     path: '/graphql'
 });
+httpServer.keepAliveTimeout = 120000; // 2 minutes
+httpServer.headersTimeout = 120000; // 2 minutes
 
 httpServer.listen({ port, host: '0.0.0.0' }, () => {
     console.log(`🚀  Server ready at ${port} ${server.graphqlPath}`);

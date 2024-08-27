@@ -64,20 +64,18 @@ const server = new ApolloServer({
     ]
 });
 
-if (process.env.NODE_ENV !== "production") {
-    app.use(express.static(path.join(__dirname, 'client/build')))
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'))
-    })
-}
+app.use(express.static(path.join(__dirname, 'client/build')))
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'))
+})
 await server.start();
 
 server.applyMiddleware({
     app,
     path: '/graphql'
 });
-httpServer.keepAliveTimeout = 120000; // 2 minutes
-httpServer.headersTimeout = 120000; // 2 minutes
+httpServer.keepAliveTimeout = 120000;
+httpServer.headersTimeout = 120000;
 
 httpServer.listen({ port, host: '0.0.0.0' }, () => {
     console.log(`🚀  Server ready at ${port} ${server.graphqlPath}`);

@@ -20,10 +20,8 @@ if (process.env.NODE_ENV !== "production") {
 const MONGO_URI = process.env.DATABASE_URL;
 const SECRATE = process.env.SECRATE;
 
-mongoose.connect(MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(MONGO_URI);
+
 
 mongoose.connection.on("connected", () => {
     console.log("connected to mongodb")

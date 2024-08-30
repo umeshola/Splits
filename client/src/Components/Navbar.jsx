@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <div className='flex justify-center relative'>
-            <div className='flex mt-1 absolute left-0'>
+            <div className='flex -ml-16 sm:ml-0 mt-1 absolute left-0'>
                 <a href="/">
                     <img className='md:h-[60px] md:w-[50px] h-[45px] w-[35px] rounded-lg' src={logo} alt="" />
                 </a>

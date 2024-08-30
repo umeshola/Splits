@@ -55,28 +55,28 @@ export default function Landing() {
             <div className='flex justify-between relative z-10'>
                 <div className='flex-1 mt-4'>
                     <div>
-                        <h1 className='lg:text-[52px] text-[40px] sm:text-[52px] md:text-[42px] 2xl:text-[72px] xl:text-[62px] font-semi-bold leading-[1.1]'>
+                        <h1 className='lg:text-[52px] -ml-16 sm:ml-0 text-[40px] sm:text-[52px] md:text-[42px] 2xl:text-[72px] xl:text-[62px] font-semi-bold leading-[1.1]'>
                             Bored of buying expensive subscription. Now enjoy
                             <FlipWords words={words} duration={3000} className="text-[40px] sm:text-[52px] md:text-[42px] lg:text-[52px] xl:text-[62px] 2xl:text-[72px] text-white font-bold" />
                             at half of the price with <span className='text-red-500'>Splits</span>.
                         </h1>
                     </div>
-                    <div className='2xl:mt-12 md:mt-36 xl:mt-16 lg:mt-28 sm:mt-32 mt-28'>
+                    <div className='2xl:mt-12 -ml-16 sm:ml-0 md:mt-36 xl:mt-16 lg:mt-28 sm:mt-32 mt-28'>
                         <div className='flex'>
-                            <svg className='lg:w-[28px] h-[22px] w-[22px] md:w-[24px] md:h-[24px] lg:h-[28px]' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg className='lg:w-[28px] h-[20px] w-[20px] md:w-[24px] md:h-[24px] lg:h-[28px]' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M5 12l5 5l10 -10" />
                             </svg>
                             <h2 className='xl:text-xl 2xl:text-2xl text-neutral-400  font-light'>At best price</h2>
                         </div>
                         <div className='flex'>
-                            <svg className='lg:w-[28px] h-[22px] w-[22px] lg:h-[28px] md:w-[24px] md:h-[24px]' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg className='lg:w-[28px] h-[20px] w-[20px] lg:h-[28px] md:w-[24px] md:h-[24px]' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M5 12l5 5l10 -10" />
                             </svg> <h2 className='xl:text-xl 2xl:text-2xl text-neutral-400 font-light'>First of it's kind</h2>
                         </div>
                         <div className='flex'>
-                            <svg className='lg:w-[28px] h-[22px] w-[22px] lg:h-[28px] md:w-[24px] md:h-[24px]' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg className='lg:w-[28px] h-[20px] w-[20px] lg:h-[28px] md:w-[24px] md:h-[24px]' xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M5 12l5 5l10 -10" />
                             </svg>
@@ -84,7 +84,7 @@ export default function Landing() {
                         </div>
 
                     </div>
-                    <div className='2xl:mt-24 mt-32 sm:mt-32 md:mt-[180px] lg:mt-[160px] xl:mt-[150px] relative '>
+                    <div className='2xl:mt-24 -ml-16 sm:ml-0 mt-32 sm:mt-32 md:mt-[180px] lg:mt-[160px] xl:mt-[150px] relative '>
                         <div>
                             <div className='absolute left-0'>
                                 <People />
@@ -151,7 +151,7 @@ export default function Landing() {
             </div>
             <div className='flex justify-center mt-20'>
                 <div>
-                    <img className='h-[220px] w-[260px] 2xl:h-[500px]  2xl:w-[570px] xl:h-[500px]  xl:w-[570px] lg:h-[450px]  lg:w-[500px] md:h-[400px]  md:w-[450px]' src={ss} alt="" />
+                    <img className='h-[220px] w-[300px] mb-6 sm:mb-0 2xl:h-[500px]  2xl:w-[570px] xl:h-[500px]  xl:w-[570px] lg:h-[450px]  lg:w-[500px] md:h-[400px]  md:w-[450px]' src={ss} alt="" />
                 </div>
                 <div className='lg:block hidden'>
                     <video className="rounded-[30px] muted hidden aspect-video lg:block 2xl:h-[400px] 2xl:w-fit xl:w-[500px] md:w-[400px] xl:h-[420px] lg:h-[400px] object-cover"
@@ -162,7 +162,7 @@ export default function Landing() {
             </div>
             <div className='flex justify-center mb-10'>
                 <div className='lg:hidden'>
-                    <video className="rounded-[10px] muted lg:hidden aspect-video h-[200px] sm:h-[240px] w-[340px] sm:w-[500px] xl:w-fit xl:h-[420px]  object-cover"
+                    <video className="rounded-[10px] muted lg:hidden aspect-video h-[200px] sm:h-[240px] w-[400px] sm:w-[500px] xl:w-fit xl:h-[420px]  object-cover"
                         src={vid}
                         allowFullScreen
                         controls
@@ -181,11 +181,11 @@ export default function Landing() {
                     </h1>
                 </div>
                 <div className='flex mt-8 justify-center'>
-                    <h1 className='text-center sm:text-[13px] md:text-[17px] lg:text-[20px] text-neutral-500'>
-                        Buy and enjoy subscription at by far the lowest rate in the industrie. <br /> Seemless experince with payment and fast group elocation.
+                    <h1 className='text-center sm:text-[13px] text-[12px] md:text-[17px] lg:text-[20px] text-neutral-500'>
+                        Buy and enjoy subscription at by far the lowest rate in the industrie. <br /> Seemless experince with payment and fast group selection.
                     </h1>
                 </div>
-                <div className=' md:flex sm:ml-24 ml-6 md:ml-0 md:justify-center mt-20'>
+                <div className=' md:flex sm:ml-24 md:ml-0 md:justify-center mt-20'>
                     <div className='h-[100px]  sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[180px] 2xl:h-[200px] border-neutral-900 border-[1.3px] mx-4 sm:mx-8 w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] xl:w-[280px] 2xl:w-[300px] rounded-xl bg-neutral-800 bg-opacity-45 flex flex-col items-center justify-center'>
                         <h1 className='text-3xl font-medium text-center text-white'>1k+</h1>
                         <h2 className='text-md text-center font-extralight text-white'>Happy User</h2>
@@ -207,7 +207,7 @@ export default function Landing() {
 
                 </div>
             </div>
-            <div className="mt-96">
+            <div className="mt-96 -ml-16 sm:ml-0">
                 <div className="flex justify-center z-50">
                     <h1 className="text-[52px]">Testimony</h1>
                 </div>

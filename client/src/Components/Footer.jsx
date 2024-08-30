@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='my-20'>
             <div className='w-full h-[1px] bg-neutral-600 opacity-45'></div>
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between -ml-16 sm:ml-0'>
                 <div className='mt-20 sm:ml-12 '>
                     <div className='flex'>
                         <div className='w-3 h-6 -mt-4 bg-white blur-[28px]'></div>
@@ -47,12 +47,6 @@ export default function Footer() {
                         <div>
                             <h1 className='text-[14px]  hover:text-neutral-300 hover:cursor-pointer text-neutral-500  font-thin'>
                                 GitHub
-                            </h1>
-                            <h1 className='text-[14px] mt-4  hover:text-neutral-300 hover:cursor-pointer text-neutral-500  font-thin'>
-                                LinkedIn
-                            </h1>
-                            <h1 className='text-[14px] mt-4  hover:text-neutral-300 hover:cursor-pointer text-neutral-500  font-thin'>
-                                Twitter
                             </h1>
                         </div>
                     </div>

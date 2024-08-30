@@ -311,54 +311,54 @@ export default function Netflix() {
                 </div>
             </div>)}
 
-            {(flag1 || flag2) ? null : <div className='sm:h-[540px] h-[600px] w-[460px] sm:w-[800px] shadow-neutral-950 shadow-[0px_0px_100px_10px_rgba(0,0,0,0.25)] bg-neutral-900 rounded-xl border-[1px] border-neutral-900'>
-                <div className='flex justify-center mt-[45px]'>
-                    <div className='border-[1px] min-h-[350px] pt-4 px-4 border-neutral-800 bg-neutral-800 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.25)] bg-opacity-45 rounded-2xl'>
+            {(flag1 || flag2) ? null : <div className='sm:h-[540px] h-[600px] w-[340px] sm:w-[800px] shadow-neutral-950 shadow-[0px_0px_100px_10px_rgba(0,0,0,0.25)] bg-neutral-900 rounded-xl border-[1px] border-neutral-900'>
+                <div className='flex justify-center mt-[25px] sm:mt-[45px]'>
+                    <div className='border-[1px] h-fit pt-4 px-4 border-neutral-800 bg-neutral-800 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.25)] bg-opacity-45 rounded-2xl'>
                         <div className='border-[1px] border-neutral-800 px-1 py-1 rounded-2xl bg-neutral-800 bg-opacity-45'>
                             <div>
-                                <h1 className='text-[22px]'>Standard</h1>
+                                <h1 className='text-[17px] sm:text-[22px]'>Standard</h1>
                             </div>
                             <div className='flex'>
                                 <div>
-                                    <h1 className='text-[24px]'>₹199</h1>
+                                    <h1 className='text-[18px] sm:text-[24px]'>₹199</h1>
                                 </div>
                                 <div>
-                                    <h1 className='text-neutral-500 text-[14px] mt-[11px] ml-[2px]'>/month</h1>
+                                    <h1 className='text-neutral-500 text-[14px] sm:mt-[11px] mt-[5px] ml-[2px]'>/month</h1>
                                 </div>
                             </div>
                         </div>
                         <div className='mb-2 mt-4'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Resolution</h1>
+                                <h1 className='text-[17px] sm:text-[18px]  text-neutral-300'>Resolution</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>1080p HD</h1>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>1080p HD</h1>
                             </div>
                         </div>
-                        <div className='my-2'>
+                        <div>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Supported devices</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Supported devices</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>
                                     TV, computer, mobile phone, tablet
                                 </h1>
                             </div>
                         </div>
                         <div className='my-2'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Devices can watch at the same time</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Devices can watch at the same time</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>2</h1>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>2</h1>
                             </div>
                         </div>
                         <div className='my-2'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Download devices</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Download devices</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>2</h1>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>2</h1>
                             </div>
                         </div>
                         <div>
@@ -379,54 +379,54 @@ export default function Netflix() {
                     <div className='border-[1px] ml-5 min-h-[350px] pt-4 px-4 border-neutral-800 bg-neutral-800 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.25)] bg-opacity-45 rounded-2xl'>
                         <div className='border-[1px] border-neutral-800 px-1 py-1 rounded-2xl bg-neutral-800 bg-opacity-45'>
                             <div>
-                                <h1 className='text-[22px]'>Premium</h1>
+                                <h1 className='text-[17px] sm:text-[22px]'>Premium</h1>
                             </div>
                             <div className='flex'>
                                 <div>
-                                    <h1 className='text-[24px]'>₹{price}</h1>
+                                    <h1 className='text-[18px] sm:text-[24px]'>₹{price}</h1>
                                 </div>
                                 <div>
-                                    <h1 className='text-neutral-500 text-[14px] mt-[11px] ml-[2px]'>/month</h1>
+                                    <h1 className='text-neutral-500 text-[14px] sm:mt-[11px] mt-[5px] ml-[2px]'>/month</h1>
                                 </div>
                             </div>
                         </div>
                         <div className='mb-2 mt-4'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Resolution</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Resolution</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>4K + HDR</h1>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>4K + HDR</h1>
                             </div>
                         </div>
                         <div className='my-2'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Supported devices</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Supported devices</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>
                                     TV, computer, mobile phone, tablet
                                 </h1>
                             </div>
                         </div>
                         <div className='my-2'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Devices can watch at the same time</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Devices can watch at the same time</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>4</h1>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>4</h1>
                             </div>
                         </div>
                         <div className='my-2'>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Download devices</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Download devices</h1>
                             </div>
                             <div>
-                                <h1 className='text-[15px] text-neutral-500'>6</h1>
+                                <h1 className='text-[13px] sm:text-[15px] text-neutral-500'>6</h1>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <h1 className='text-[18px] text-neutral-300'>Members</h1>
+                                <h1 className='text-[17px] sm:text-[18px] text-neutral-300'>Members</h1>
                             </div>
                             <div>
                                 <div className='border-[1px] w-fit bg-neutral-900 border-neutral-800 rounded-md'>

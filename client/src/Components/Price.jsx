@@ -42,8 +42,8 @@ export default function Price() {
     ];
 
     return (
-        <div className='mb-[750px]'>
-            <div className='md:mx-32'>
+        <div className='mb-[750px] '>
+            <div className='md:mx-32 -ml-12 sm:ml-0'>
                 <h1 className='text-[34px]'>
                     Choose plan
                 </h1>

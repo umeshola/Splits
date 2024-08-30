@@ -25,7 +25,7 @@ export const Tabs = ({
         <>
             <div
                 className={cn(
-                    "flex flex-row items-center justify-start  md:ml-32 mt-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+                    "flex flex-row -ml-12 sm:ml-0 items-center justify-start  md:ml-32 mt-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
                     containerClassName
                 )}
             >

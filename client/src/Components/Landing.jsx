@@ -207,7 +207,7 @@ export default function Landing() {
 
                 </div>
             </div>
-            <div className="mt-96 -ml-16 sm:ml-0">
+            <div className="mt-96 ">
                 <div className="flex justify-center z-50">
                     <h1 className="text-[52px]">Testimony</h1>
                 </div>

@@ -6,8 +6,8 @@ export default function Footer() {
         <div className='my-20'>
             <div className='w-full h-[1px] bg-neutral-600 opacity-45'></div>
 
-            <div className='flex justify-between -ml-16 sm:ml-0'>
-                <div className='mt-20 sm:ml-12 '>
+            <div className='flex justify-between '>
+                <div className='mt-20 -ml-10 sm:ml-12 '>
                     <div className='flex'>
                         <div className='w-3 h-6 -mt-4 bg-white blur-[28px]'></div>
                         <img className='h-8 -ml-4 w-7 mt-1 rounded-md' src={logo} alt="logo" />
@@ -19,7 +19,7 @@ export default function Footer() {
                         </h1>
                     </div>
                 </div>
-                <div className='mt-24 sm:mr-24 flex'>
+                <div className='mt-24 -mr-10 sm:mr-24 flex'>
                     <div>
                         <div>
                             <a href="/price">

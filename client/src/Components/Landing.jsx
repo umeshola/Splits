@@ -151,7 +151,7 @@ export default function Landing() {
             </div>
             <div className='flex justify-center mt-20'>
                 <div>
-                    <img className='h-[220px] w-[300px] mb-6 sm:mb-0 2xl:h-[500px]  2xl:w-[570px] xl:h-[500px]  xl:w-[570px] lg:h-[450px]  lg:w-[500px] md:h-[400px]  md:w-[450px]' src={ss} alt="" />
+                    <img className='h-[200px] w-[300px] mb-6 sm:mb-0 2xl:h-[500px]  2xl:w-[570px] xl:h-[500px]  xl:w-[570px] lg:h-[450px]  lg:w-[500px] md:h-[400px]  md:w-[450px]' src={ss} alt="" />
                 </div>
                 <div className='lg:block hidden'>
                     <video className="rounded-[30px] muted hidden aspect-video lg:block 2xl:h-[400px] 2xl:w-fit xl:w-[500px] md:w-[400px] xl:h-[420px] lg:h-[400px] object-cover"
@@ -185,7 +185,7 @@ export default function Landing() {
                         Buy and enjoy subscription at by far the lowest rate in the industrie. <br /> Seemless experince with payment and fast group selection.
                     </h1>
                 </div>
-                <div className=' md:flex sm:ml-24 md:ml-0 md:justify-center mt-20'>
+                <div className=' md:flex sm:ml-24 md:ml-0 -ml-6 md:justify-center mt-20'>
                     <div className='h-[100px]  sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[180px] 2xl:h-[200px] border-neutral-900 border-[1.3px] mx-4 sm:mx-8 w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] xl:w-[280px] 2xl:w-[300px] rounded-xl bg-neutral-800 bg-opacity-45 flex flex-col items-center justify-center'>
                         <h1 className='text-3xl font-medium text-center text-white'>1k+</h1>
                         <h2 className='text-md text-center font-extralight text-white'>Happy User</h2>

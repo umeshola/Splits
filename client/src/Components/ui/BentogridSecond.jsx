@@ -243,7 +243,7 @@ const Chat = ({ datamsg, plan, fun, setMsg }) => {
                 })}
                 <div ref={bottomRef} />
             </div>
-            <div className="absolute bottom-0 left-0 w-fit flex items-center bg-neutral-800 bg-opacity-60 p-2 rounded-xl">
+            <div className="absolute bottom-0 left-0 md:w-full flex items-center bg-neutral-800 bg-opacity-60 p-2 rounded-xl">
                 <input
                     onChange={(e) => { setMsg(e.target.value) }}
                     type="text"

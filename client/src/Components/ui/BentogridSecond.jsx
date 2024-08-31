@@ -331,10 +331,10 @@ const Info = ({ user }) => (
                         <h1 className="md:text-[20px] text-[17px]">Password:</h1>
                     </div>
                     <div className="flex">
-                        <h1 className="md:text-[18px] text-[16px] text-neutral-500 ml-2 mt-[3px]">{user.password}</h1>
+                        <h1 className="md:text-[18px] text-[16px] text-neutral-500 ml-2 mt-[3px]">{user.password.substring(0, 2)}....</h1>
                     </div>
                 </div>
-                <div className="flex mt-4 bg-neutral-700 bg-opacity-70 rounded-md px-1 relative">
+                {/* <div className="flex mt-4 bg-neutral-700 bg-opacity-70 rounded-md px-1 relative">
                     <div>
                         <h1 className="md:text-[20px] text-[17px]">Change password</h1>
                     </div>
@@ -347,7 +347,7 @@ const Info = ({ user }) => (
                             <path d="M15 18a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
                         </svg>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

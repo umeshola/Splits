@@ -65,7 +65,7 @@ export default function BentogridThirdDemo() {
                     <div key={id} className='flex justify-center my-16'>
                         <div className='md:h-fit md:w-fit w-full h-full md:min-w-[600px] rounded-xl bg-neutral-700 bg-opacity-40'>
                             <div className='bg-neutral-600 w-full h-[40px] rounded-t-xl bg-opacity-35'>
-                                <h1 className='md:text-[26px] sm:text-[24px] text-[20px] ml-1 pt-1'>{platform} - {plan} for {member} members</h1>
+                                <h1 className='md:text-[26px]  sm:text-[24px] text-[15px] ml-1 pt-1'>{platform} - {plan} for {member} members</h1>
                             </div>
                             <div className='relative flex'>
                                 <div className='h-[6px] rounded-xl ml-12 mt-6 w-[500px] bg-slate-50'>
@@ -87,9 +87,6 @@ export default function BentogridThirdDemo() {
                                 </h1>
                             </div>
                             <div className='flex justify-center mt-1'>
-                                <div className='pt-1 px-2 rounded-sm bg-opacity-45 bg-neutral-800 mr-2 hover:bg-green-900 hover:bg-opacity-10 border-[1px] border-neutral-700'>
-                                    <button>Speed Up</button>
-                                </div>
                                 <div className='pt-1 px-2 rounded-sm bg-opacity-45 bg-neutral-800 hover:bg-red-900 hover:bg-opacity-10 border-[1px] border-neutral-700'>
                                     <button onClick={() => handlecancle(plan, platform, member)}>Cancel</button>
                                 </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Sidebar, SidebarBody, SidebarLink } from './ui/Sidebar';
 import { BentoGridSecondDemo } from './ui/BentogridSecond';
 import { Get_Plan, GetOnePlanData, MEINFO, remove_plan_after_time } from '../connection/query';
-import { useQuery } from '@apollo/client';
+import { useMutation, useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom'
 
 export default function Profile() {

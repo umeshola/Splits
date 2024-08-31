@@ -4,6 +4,7 @@ import CardStack from './ui/CardStack';
 import ss from '../assets/ss.png'
 import img2 from '../assets/netflix.jpeg';
 import img12 from '../assets/got.jpeg'
+import { Toaster, toast } from 'react-hot-toast'
 
 import img1 from '../assets/sony.jpeg';
 import img16 from '../assets/dislogo.jpeg'
@@ -43,12 +44,35 @@ export default function Landing() {
         { quote: "Can you get it for more app.", name: "02hardik", img: test8 },
         { quote: "Email and the password is avaliable in less then 24 hours.I this app is great.", name: "Ksun", img: test9 },
 
-
-
     ];
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        const isSmallScreen = window.innerWidth < 640;
+
+        if (!token && isSmallScreen) {
+            toast.custom((t) => (
+                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} w-fit  bg-neutral-950 border-[1px] border-neutral-800 rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.2)]`}>
+                    <div className='flex py-1 px-2'>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler mt-[3px] ml-[3px] icon-tabler-circle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.4" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24H0z" fill="none" />
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            </svg>
+                        </div>
+                        <div className='px-2'>
+                            <h1 className='text-lg'>Best experience on big screen</h1>
+                        </div>
+                    </div>
+                </div>
+            ));
+        }
+    }, []);
     const words = ["new-movie", "web-series", "short-flims"];
     return (
         <div>
+            <div className=''>
+                <Toaster position="top-center" reverseOrder={false} />
+            </div>
             <div className='z-0'>
                 <Spotlight className="bg-black" fill="#ff0000" />
             </div>

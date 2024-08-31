@@ -60,7 +60,7 @@ export default function Landing() {
                             </svg>
                         </div>
                         <div className='px-2'>
-                            <h1 className='text-xl text-red-400'>Best experience on big screen</h1>
+                            <h1 className='text-lg text-red-400'>Best experience on big screen</h1>
                         </div>
                     </div>
                 </div>

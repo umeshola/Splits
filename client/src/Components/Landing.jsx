@@ -51,16 +51,16 @@ export default function Landing() {
 
         if (!token && isSmallScreen) {
             toast.custom((t) => (
-                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} w-fit mt-10 bg-neutral-950 border-[1px] border-neutral-800 rounded-xl pointer-events-auto flex ring-1 ring-black ring-opacity-5 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.2)]`}>
-                    <div className='flex py-1 px-2'>
+                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} w-fit mt-12 bg-neutral-950 border-[1px] border-neutral-800 rounded-xl pointer-events-auto flex ring-1 ring-black ring-opacity-5 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.2)]`}>
+                    <div className='flex py-2 px-3'>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler mt-[3px] ml-[3px] icon-tabler-circle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.4" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler mt-[3px] ml-[3px] icon-tabler-circle" width="22" height="22" viewBox="0 0 24 24" stroke-width="2.4" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24H0z" fill="none" />
                                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                             </svg>
                         </div>
                         <div className='px-2'>
-                            <h1 className='text-lg'>Best experience on big screen</h1>
+                            <h1 className='text-xl text-red-400'>Best experience on big screen</h1>
                         </div>
                     </div>
                 </div>

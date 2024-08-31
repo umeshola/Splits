@@ -51,7 +51,7 @@ export default function Landing() {
 
         if (!token && isSmallScreen) {
             toast.custom((t) => (
-                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} w-fit  bg-neutral-950 border-[1px] border-neutral-800 rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.2)]`}>
+                <div className={`${t.visible ? 'animate-enter' : 'animate-leave'} w-fit mt-10 bg-neutral-950 border-[1px] border-neutral-800 rounded-xl pointer-events-auto flex ring-1 ring-black ring-opacity-5 shadow-neutral-900 shadow-[0px_0px_10px_2px_rgba(0,0,0,0.2)]`}>
                     <div className='flex py-1 px-2'>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler mt-[3px] ml-[3px] icon-tabler-circle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.4" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">

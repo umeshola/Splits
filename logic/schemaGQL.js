@@ -112,6 +112,7 @@ type Mutation{
     cancle(cancle_new:cancleInput!):String
     refunded(id:String!):String
     remove_waiting:String
+    remove_plan:String
     help(complain:String!):String
     helped(id:String!):String
     notPaid(id:String!):String

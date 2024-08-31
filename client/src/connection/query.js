@@ -144,6 +144,11 @@ mutation REmove_waiting{
   remove_waiting
 }
 `
+export const remove_plan_after_time = gql `
+mutation RemovePlan{
+  remove_plan
+}
+`
 
 export const ask_for_help = gql `
 mutation AskHelp($data:String!){

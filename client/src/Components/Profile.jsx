@@ -1,19 +1,39 @@
 import React, { useState } from 'react';
 import { Sidebar, SidebarBody, SidebarLink } from './ui/Sidebar';
 import { BentoGridSecondDemo } from './ui/BentogridSecond';
-import { Get_Plan, GetOnePlanData, MEINFO } from '../connection/query';
+import { Get_Plan, GetOnePlanData, MEINFO, remove_plan_after_time } from '../connection/query';
 import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom'
 
 export default function Profile() {
     const { id } = useParams()
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [fun1] = useMutation(remove_plan_after_time)
     const { data: d1, loading: l1, error: e1, refetch: r1 } = useQuery(Get_Plan);
-    const { data: d2, loading: l2, error: e2 } = useQuery(GetOnePlanData, {
+    const { data: d2, loading: l2, error: e2, refetch: r2 } = useQuery(GetOnePlanData, {
         skip: !id,
         variables: { data: id }
     });
     const { data: d3 } = useQuery(MEINFO);
+
+    const handleRemoveWaiting = async () => {
+        try {
+            await fun1();
+            r1();
+            r2();
+        } catch (error) {
+            console.error("Error removing waiting entries:", error);
+        }
+    };
+
+    const initialized = useRef(false);
+    useEffect(() => {
+        if (!initialized.current) {
+            initialized.current = true;
+            handleRemoveWaiting();
+        }
+
+    }, []);
     if (l1 || l2) return <p className='text-white text-2xl text-center'>Loading...</p>;
     if (e1 || e2) return <p className='text-4xl text-neutral-300 text-center mt-24'>You are not Loged in<a href='/login' className=' underline text-xl text-blue-500 ml-2 hover:cursor-pointer'>(login)</a> </p>;
 

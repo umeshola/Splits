@@ -327,6 +327,38 @@ const resolvers = {
             await Refund.findByIdAndDelete(id)
             return "Done refunding!"
         },
+        remove_plan: async(_, args, { userId }) => {
+            if (!userId) throw new Error("You are not logged in!");
+
+            const currentDate = new Date();
+
+            try {
+                // Fetch all subscriptions
+                const subs = await Sub.find({});
+
+                for (const sub of subs) {
+                    const { _id, starting, timePeriod, members } = sub;
+
+                    // Calculate the expiration date
+                    const expirationDate = new Date(starting);
+                    expirationDate.setMonth(expirationDate.getMonth() + timePeriod);
+
+                    // Check if the subscription has expired
+                    if (currentDate >= expirationDate) {
+                        // Delete the subscription
+                        await Sub.findByIdAndDelete(_id);
+
+                        // Remove the subscription reference from each member's 'sub' array
+                        await User.updateMany({ _id: { $in: members } }, { $pull: { sub: _id } });
+                        await Msg.deleteMany({ on: _id });
+                    }
+                }
+
+                return "Expired plans removed successfully!";
+            } catch (error) {
+                throw new Error(`Error removing expired plans: ${error.message}`);
+            }
+        },
         remove_waiting: async(_, args, { userId }) => {
             if (!userId) throw new Error("You are not logged in!");
             try {

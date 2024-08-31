@@ -296,7 +296,7 @@ const Info = ({ user }) => (
             <div className="mx-3 py-4">
                 <div className="flex">
                     <div className="">
-                        <h1 className="text-[17px] md:text-[20px]">Email :</h1>
+                        <h1 className="text-[17px] md:text-[20px]">Email </h1>
                     </div>
                     <div>
                         <h1 className="md:text-[18px] text-[16px] text-neutral-500 md:ml-2 mt-[3px]">{user?.email}</h1>
@@ -304,7 +304,7 @@ const Info = ({ user }) => (
                 </div>
                 <div className="flex">
                     <div className="">
-                        <h1 className="md:text-[20px] text-[17px]">Username :</h1>
+                        <h1 className="md:text-[20px] text-[17px]">Username </h1>
                     </div>
                     <div>
                         <h1 className="md:text-[18px] text-[16px] text-neutral-500 md:ml-2 mt-[3px]">{user?.userName}</h1>
@@ -312,7 +312,7 @@ const Info = ({ user }) => (
                 </div>
                 <div className="flex">
                     <div className="">
-                        <h1 className="md:text-[20px] text-[17px]">First Name:</h1>
+                        <h1 className="md:text-[20px] text-[17px]">First Name</h1>
                     </div>
                     <div>
                         <h1 className="md:text-[18px] text-[16px] text-neutral-500 md:ml-2 mt-[3px]">{user?.firstName}</h1>
@@ -320,7 +320,7 @@ const Info = ({ user }) => (
                 </div>
                 <div className="flex">
                     <div className="">
-                        <h1 className="md:text-[20px] text-[17px]">Last Name:</h1>
+                        <h1 className="md:text-[20px] text-[17px]">Last Name</h1>
                     </div>
                     <div>
                         <h1 className="md:text-[18px] text-[14px] text-neutral-500 md:ml-2 mt-[3px]">{user?.lastName}</h1>
@@ -328,7 +328,7 @@ const Info = ({ user }) => (
                 </div>
                 <div className="flex relative">
                     <div className="">
-                        <h1 className="md:text-[20px] text-[17px]">Password:</h1>
+                        <h1 className="md:text-[20px] text-[17px]">Password</h1>
                     </div>
                     <div className="flex">
                         <h1 className="md:text-[18px] text-[16px] text-neutral-500 ml-2 mt-[3px]">{user.password.substring(0, 2)}....</h1>

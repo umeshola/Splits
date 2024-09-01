@@ -320,7 +320,7 @@ export default function Netflix() {
                             </div>
                             <div className='flex'>
                                 <div>
-                                    <h1 className='text-[18px] sm:text-[24px]'>₹199</h1>
+                                    <h1 className='text-[18px] sm:text-[24px]'>₹299</h1>
                                 </div>
                                 <div>
                                     <h1 className='text-neutral-500 text-[14px] sm:mt-[11px] mt-[5px] ml-[2px]'>/month</h1>

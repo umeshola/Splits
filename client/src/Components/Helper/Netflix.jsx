@@ -17,10 +17,10 @@ export default function Netflix() {
     useEffect(() => {
         switch (member) {
             case 2:
-                setPrice(449);
+                setPrice(399);
                 break;
             case 3:
-                setPrice(349);
+                setPrice(299);
                 break;
             case 4:
                 setPrice(249);

@@ -15,19 +15,19 @@ export default function Youtube() {
     useEffect(() => {
         switch (member) {
             case 2:
-                setPrice(129);
+                setPrice(219);
                 break;
             case 3:
-                setPrice(99);
+                setPrice(159);
                 break;
             case 4:
-                setPrice(79);
+                setPrice(119);
                 break;
             case 5:
-                setPrice(59);
+                setPrice(99);
                 break;
             default:
-                setPrice(129);
+                setPrice(219);
         }
     }, [member]);
     const handleMemberChange = (event) => {

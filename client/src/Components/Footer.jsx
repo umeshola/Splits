@@ -45,9 +45,11 @@ export default function Footer() {
                     </div>
                     <div className='ml-10'>
                         <div>
-                            <h1 className='text-[14px]  hover:text-neutral-300 hover:cursor-pointer text-neutral-500  font-thin'>
-                                GitHub
-                            </h1>
+                            <a href="https://github.com/umeshola/Splits" target="blank">
+                                <h1 className='text-[14px]  hover:text-neutral-300 hover:cursor-pointer text-neutral-500  font-thin'>
+                                    GitHub
+                                </h1>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -58,19 +58,19 @@ export default function Prime() {
         // Update the price based on the selected member count
         switch (member2) {
             case 2:
-                setPrice2(1099);
-                break;
-            case 3:
                 setPrice2(899);
                 break;
-            case 4:
-                setPrice2(799);
+            case 3:
+                setPrice2(699);
                 break;
-            case 5:
+            case 4:
                 setPrice2(499);
                 break;
+            case 5:
+                setPrice2(399);
+                break;
             default:
-                setPrice2(999);
+                setPrice2(899);
         }
     }, [member2]);
     const handleMemberChange2 = (event) => {

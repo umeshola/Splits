@@ -78,7 +78,7 @@ export default function Navbar() {
                                 </div>
                             )}
                             {isMenuOpen && (
-                                <div className='absolute text-xl top-full right-0 mt-1 bg-neutral-900 text-white rounded-xl px-4 py-2 shadow-neutral-950 shadow-[0px_10px_10px_1px_rgba(0,0,0,0.5)]'>
+                                <div className='absolute text-xl top-full right-0 -mt-1 bg-neutral-900 text-white rounded-xl px-4 py-2 shadow-neutral-950 shadow-[0px_10px_10px_1px_rgba(0,0,0,0.5)]'>
                                     <a href="/profile" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Profile</a>
                                     <a href="/waiting" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Waiting</a>
                                     <a href="/contact" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Contact</a>

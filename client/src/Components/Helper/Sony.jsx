@@ -128,7 +128,7 @@ export default function Sony() {
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
-                        <h1> <span className='text-neutral-100'>Note :</span> Send a screen shot of the payment on this whatsApp with your username and email. <span className='text-neutral-200'>6283468927</span> </h1>
+                        <h1> <span className='text-neutral-100'>Note :</span> Send a screen-shot of the payment on this whatsApp with your username and email. <span className='text-neutral-200'>6283468927</span> </h1>
                     </div>
                     <div className='flex mt-[20px] w-[270px] ml-10 justify-center border-[1px] rounded-xl border-neutral-900 bg-neutral-950'>
                         <button

@@ -86,7 +86,7 @@ export default function Signup() {
                 <div className='flex justify-center border-[1px] border-neutral-700 p-7 rounded-2xl w-fit bg-black'>
                     <div>
                         <div className='space-y-2 mb-4'>
-                            <h1 className='text-xl text-left'>Welcome to Splits.</h1>
+                            <h1 className='text-xl text-left'>Welcome to Splits</h1>
                             <h1 className='text-neutral-400'>If you already have an account click here <span onClick={() => navigate('/login')} className='text-blue-500 hover:cursor-pointer underline'>login</span>.</h1>
                         </div>
                         <div className='flex mb-4 pt-6'>
@@ -101,7 +101,7 @@ export default function Signup() {
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Username</h1>
-                            <Input onChange={(e) => setName(e.target.value)} id="username" type="text" placeholder="Umeshsharma01" />
+                            <Input onChange={(e) => setName(e.target.value)} id="username" type="text" placeholder="Umeshola01" />
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Email Address</h1>
@@ -109,7 +109,7 @@ export default function Signup() {
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Phone number</h1>
-                            <Input onChange={handlePhoneChange} id='phone' type='number' value={phone} placeholder="9988998899" />
+                            <Input onChange={handlePhoneChange} id='phone' type='number' value={phone} placeholder="99xxxxxx99" />
                             {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
                         </div>
                         <div className='mb-4'>

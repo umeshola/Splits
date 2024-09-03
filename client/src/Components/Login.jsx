@@ -59,7 +59,7 @@ export default function Login() {
                 <div className='flex justify-center border-[1px] border-neutral-700 p-7 rounded-2xl w-fit bg-black'>
                     <div>
                         <div className='space-y-2 mb-4'>
-                            <h1 className='text-xl text-left'>Welcome to Framerpad</h1>
+                            <h1 className='text-xl text-left'>Welcome to Splits</h1>
                             <h1 className='text-neutral-400'>If you don't have account click here <span onClick={() => navigate('/singup')} className='text-blue-500 hover:cursor-pointer underline'>signup</span>.</h1>
                         </div>
                         <div className='mb-4'>

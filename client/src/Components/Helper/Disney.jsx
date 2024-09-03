@@ -18,16 +18,16 @@ export default function Disney() {
         // Update the price based on the selected member count
         switch (member) {
             case 2:
-                setPrice(299);
+                setPrice(219);
                 break;
             case 3:
-                setPrice(229);
+                setPrice(179);
                 break;
             case 4:
-                setPrice(199);
+                setPrice(129);
                 break;
             default:
-                setPrice(299);
+                setPrice(219);
         }
     }, [member]);
     const handleMemberChange = (event) => {
@@ -242,7 +242,7 @@ export default function Disney() {
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
-                        <h1> <span className='text-neutral-100'>Note :</span> Send a screen shot of the payment on this whatsApp with your username and email. <span className='text-neutral-200'>6283468927</span> </h1>
+                        <h1> <span className='text-neutral-100'>Note :</span> Send a screen-shot of the payment on this whatsApp with your username and email. <span className='text-neutral-200'>6283468927</span> </h1>
                     </div>
                     <div className='flex mt-[20px] w-[270px] ml-10 justify-center border-[1px] rounded-xl border-neutral-900 bg-neutral-950'>
                         <button
@@ -287,7 +287,7 @@ export default function Disney() {
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
-                        <h1> <span className='text-neutral-100'>Note :</span> Send a screen shot of the payment on this whatsApp with your username and email. <span className='text-neutral-200'>6283468927</span> </h1>
+                        <h1> <span className='text-neutral-100'>Note :</span> Send a screen-shot of the payment on this whatsApp with your username and email. <span className='text-neutral-200'>6283468927</span> </h1>
                     </div>
                     <div className='flex mt-[20px] w-[270px] ml-10 justify-center border-[1px] rounded-xl border-neutral-900 bg-neutral-950'>
                         <button

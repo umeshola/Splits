@@ -467,7 +467,7 @@ export default function Netflix() {
                         </a>
                     </div>
                     <div>
-                        <h1 className='text-[16px] text-neutral-300'>
+                        <h1 className='text-[16px] ml-2 text-neutral-300'>
                             message
                         </h1>
                     </div>

@@ -52,7 +52,6 @@ export default function Price() {
                 </h1>
             </div>
             <Tabs tabs={tabs} />
-            <div>Whatapp Links</div>
         </div>
     );
 }

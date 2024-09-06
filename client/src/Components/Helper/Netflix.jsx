@@ -455,6 +455,9 @@ export default function Netflix() {
                     </div>
                 </div>
             </div>}
+            <div className='mt-5'>
+                <div>Whatapp Links</div>
+            </div>
         </div>
     )
 }

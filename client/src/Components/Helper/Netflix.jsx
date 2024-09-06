@@ -456,14 +456,14 @@ export default function Netflix() {
                 </div>
             </div>}
             <div className='mt-5'>
-                <div>
+                <div className='flex justify-center'>
                     <a target='_blank' href="https://wa.me/6283468927?text=Hello%20I%20made%20a%20payment%20successfully%20for%20my%20plan%20and%20here%20is%20the%20screenshot%20of%20payment.%20Please%20activate">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
                             <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
                         </svg>
-                        <h1>
+                        <h1 className='text-[16px] text-neutral-300'>
                             whatsApp
                         </h1>
                     </a>

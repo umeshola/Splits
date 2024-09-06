@@ -455,7 +455,7 @@ export default function Netflix() {
                     </div>
                 </div>
             </div>}
-            <div className='mt-5'>
+            <div className='mx-5'>
                 <div className='flex justify-center'>
                     <div>
                         <a target='_blank' href="https://wa.me/6283468927?text=Hello%20I%20made%20a%20payment%20successfully%20for%20my%20plan%20and%20here%20is%20the%20screenshot%20of%20payment.%20Please%20activate">
@@ -467,7 +467,7 @@ export default function Netflix() {
                         </a>
                     </div>
                     <div>
-                        <h1 className='text-[16px] ml-2 text-neutral-300'>
+                        <h1 className='text-[16px] ml-2 mt-1 text-neutral-300'>
                             message
                         </h1>
                     </div>

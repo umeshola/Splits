@@ -112,7 +112,7 @@ function App() {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/singup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/contact" element={<Contact />} />

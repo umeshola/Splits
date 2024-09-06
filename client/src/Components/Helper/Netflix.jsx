@@ -464,8 +464,9 @@ export default function Netflix() {
                             <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
                         </svg>
                         <h1 className='text-[16px] text-neutral-300'>
-                            whatsApp
+                            message
                         </h1>
+
                     </a>
                 </div>
             </div>

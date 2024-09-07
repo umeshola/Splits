@@ -170,7 +170,7 @@ export default function Contact() {
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder='Email'
+                            placeholder='Your Email'
                         />
                         <textarea
                             className='px-2 text-[15px] bg-neutral-800 bg-opacity-45 border-[1px] border-neutral-800 rounded-md md:w-[380px] h-44 placeholder:text-neutral-400'

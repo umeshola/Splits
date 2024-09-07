@@ -34,14 +34,14 @@ export default function Signup() {
         }
     };
 
-    // Password validation function
+    // Password validation function with individual error messages
     const validatePassword = (pass) => {
-        const isValidLength = pass.length >= 8;
-        const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(pass);
-        const hasNumber = /\d/.test(pass);
-
-        if (!isValidLength || !hasSpecialChar || !hasNumber) {
-            setPasswordError('Password must be at least 8 characters long, include a number and a special character.');
+        if (pass.length < 8) {
+            setPasswordError('Password must be at least 8 characters long.');
+        } else if (!/[!@#$%^&*(),.?":{}|<>]/.test(pass)) {
+            setPasswordError('Password must include at least one special character.');
+        } else if (!/\d/.test(pass)) {
+            setPasswordError('Password must include at least one number.');
         } else {
             setPasswordError('Password is strong and good!'); // Green message
         }
@@ -61,7 +61,7 @@ export default function Signup() {
         }
 
         // Ensure the password is valid before submitting
-        if (passwordError.includes('must')) {
+        if (!password || passwordError.includes('must')) {
             toast.error("Please provide a valid password.");
             return;
         }

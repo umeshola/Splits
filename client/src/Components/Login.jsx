@@ -64,7 +64,7 @@ export default function Login() {
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Username</h1>
-                            <Input onChange={(e) => setName(e.target.value)} id="username" type="text" placeholder="Umeshola01" />
+                            <Input onChange={(e) => setName(e.target.value)} id="username" type="text" placeholder="Karan481" />
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Password</h1>

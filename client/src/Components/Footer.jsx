@@ -13,11 +13,11 @@ export default function Footer() {
                         <img className='h-8 -ml-4 w-7 mt-1 rounded-md' src={logo} alt="logo" />
                         <h1 className='mt-[5px] font-bold text-2xl ml-1'>Splits</h1>
                     </div>
-                    <div className='mt-4'>
+                    {/* <div className='mt-4'>
                         <h1 className='text-[14px] text-neutral-500  font-thin'>
                             Builded by <a target='blank' href='https://www.linkedin.com/in/umesh-ola-a07501231' className='text-blue-500 font-semibold text-[14px]'>@Umesh</a>
                         </h1>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='mt-24 -mr-10 sm:mr-24 flex'>
                     <div>

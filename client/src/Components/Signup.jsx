@@ -11,7 +11,7 @@ export default function Signup() {
     const [userName, setName] = useState("");
     const [email, setMail] = useState("");
     const [password, setPass] = useState("");
-    const [token, setToken] = useState("");
+    const [passwordError, setPasswordError] = useState("");
     const [phone, setPhone] = useState("");
     const [phoneError, setPhoneError] = useState("");
     const navigate = useNavigate();
@@ -34,10 +34,35 @@ export default function Signup() {
         }
     };
 
+    // Password validation function
+    const validatePassword = (pass) => {
+        const isValidLength = pass.length >= 8;
+        const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(pass);
+        const hasNumber = /\d/.test(pass);
+
+        if (!isValidLength || !hasSpecialChar || !hasNumber) {
+            setPasswordError('Password must be at least 8 characters long, include a number and a special character.');
+        } else {
+            setPasswordError('Password is strong and good!'); // Green message
+        }
+    };
+
+    const handlePasswordChange = (e) => {
+        const newPassword = e.target.value;
+        setPass(newPassword);
+        validatePassword(newPassword); // Call password validation on every change
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (phone.length !== 10) {
             setPhoneError("Phone number should be exactly 10 digits.");
+            return;
+        }
+
+        // Ensure the password is valid before submitting
+        if (passwordError.includes('must')) {
+            toast.error("Please provide a valid password.");
             return;
         }
 
@@ -55,7 +80,6 @@ export default function Signup() {
                 }
             });
             if (data && data.signup && data.signup.token) {
-                setToken(data.signup.token);
                 localStorage.setItem('token', data.signup.token);
                 window.location = '/';
             }
@@ -92,29 +116,32 @@ export default function Signup() {
                         <div className='flex mb-4 pt-6'>
                             <div className='mr-2'>
                                 <h1 className='text-left'>First name</h1>
-                                <Input onChange={(e) => setFname(e.target.value)} id="first-name" type="text" placeholder="Umesh" />
+                                <Input onChange={(e) => setFname(e.target.value)} id="first-name" type="text" placeholder="Karan" />
                             </div>
                             <div>
                                 <h1 className='text-left'>Last name</h1>
-                                <Input onChange={(e) => setLname(e.target.value)} id="last-name" type="text" placeholder="ola" />
+                                <Input onChange={(e) => setLname(e.target.value)} id="last-name" type="text" placeholder="Yadav" />
                             </div>
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Username</h1>
-                            <Input onChange={(e) => setName(e.target.value)} id="username" type="text" placeholder="Umeshola01" />
+                            <Input onChange={(e) => setName(e.target.value)} id="username" type="text" placeholder="karan121203" />
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Email Address</h1>
-                            <Input onChange={(e) => setMail(e.target.value)} id="email" type="email" placeholder="framerpad@fc.com" />
+                            <Input onChange={(e) => setMail(e.target.value)} id="email" type="email" placeholder="yourmail@gmail.com" />
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Phone number</h1>
-                            <Input onChange={handlePhoneChange} id='phone' type='number' value={phone} placeholder="99xxxxxx99" />
+                            <Input onChange={handlePhoneChange} id='phone' type='number' value={phone} placeholder="9989897889" />
                             {phoneError && <p className="text-red-500 text-sm">{phoneError}</p>}
                         </div>
                         <div className='mb-4'>
                             <h1 className='text-left'>Password</h1>
-                            <Input onChange={(e) => setPass(e.target.value)} id="password" type="password" placeholder="......" />
+                            <Input onChange={handlePasswordChange} id="password" type="password" placeholder="......" />
+                            <p className={passwordError.includes('strong') ? "text-green-500 text-sm" : "text-red-500 text-sm"}>
+                                {passwordError}
+                            </p>
                         </div>
                         <div className='mt-16'>
                             <button onClick={handleSubmit} className="bg-gradient-to-br bg-neutral-950 border-[0.8px] border-neutral-900 relative group/btn block w-full text-white rounded-md h-10 font-medium" type='submit'>Sign Up

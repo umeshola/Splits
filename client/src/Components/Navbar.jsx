@@ -21,6 +21,7 @@ export default function Navbar() {
     const signout = () => {
         localStorage.removeItem("token");
         flag = false;
+        window.location.reload()
     }
 
     return (

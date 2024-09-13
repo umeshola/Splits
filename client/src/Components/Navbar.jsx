@@ -30,7 +30,7 @@ export default function Navbar() {
                     <img className='md:h-[60px] md:w-[50px] h-[45px] w-[35px] rounded-lg' src={logo} alt="" />
                 </a>
                 <a href="/" className='md:mt-[8px]'>
-                    <p className='text-xl md:text-4xl hidden md:block font-semibold md:ml-1'>Splits</p>
+                    <p className='text-xl md:text-4xl hidden lg:block font-semibold md:ml-1'>Splits</p>
                 </a>
             </div>
             <div className='mb-12 flex mt-1'>

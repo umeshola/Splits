@@ -17,16 +17,16 @@ export default function Netflix() {
     useEffect(() => {
         switch (member) {
             case 2:
-                setPrice(399);
+                setPrice(349);
                 break;
             case 3:
-                setPrice(299);
+                setPrice(239);
                 break;
             case 4:
-                setPrice(249);
+                setPrice(179);
                 break;
             default:
-                setPrice(449);
+                setPrice(349);
         }
     }, [member]);
     const [loading, setLoading] = useState(false);
@@ -88,7 +88,7 @@ export default function Netflix() {
                         Ldevice: 2,
                         Ddevice: 2,
                         quality: "1080p HD",
-                        price: 299
+                        price: 259
                     }
                 }
             });
@@ -238,7 +238,7 @@ export default function Netflix() {
                             <h1 className='text-[17px]'>Amount :</h1>
                         </div>
                         <div>
-                            <h1 className='text-[15px] mt-[3px] ml-2'>299.00</h1>
+                            <h1 className='text-[15px] mt-[3px] ml-2'>259.00</h1>
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
@@ -320,7 +320,7 @@ export default function Netflix() {
                             </div>
                             <div className='flex'>
                                 <div>
-                                    <h1 className='text-[18px] sm:text-[24px]'>₹299</h1>
+                                    <h1 className='text-[18px] sm:text-[24px]'>₹259</h1>
                                 </div>
                                 <div>
                                     <h1 className='text-neutral-500 text-[14px] sm:mt-[11px] mt-[5px] ml-[2px]'>/month</h1>

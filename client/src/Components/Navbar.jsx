@@ -52,14 +52,21 @@ export default function Navbar() {
                                 </svg>
                             </button>
                         </div>
-                        <div className=' hidden md:block'>
-                            {flag ?
-                                <div onClick={signout} className='block px-4 py-2 cursor-pointer rounded-lg hover:bg-red-900 hover:bg-opacity-35'>
-                                    <h1>Signout</h1>
+                        <div className='hidden md:block'>
+                            <div className='flex'>
+                                <div>
+                                    {flag ?
+                                        <div onClick={signout} className='block px-4 py-2 cursor-pointer rounded-lg hover:bg-red-900 hover:bg-opacity-35'>
+                                            <h1 className='text-2xl'>Signout</h1>
+                                        </div>
+                                        :
+                                        <a href="/login" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 text-2xl hover:bg-opacity-45'>Login</a>
+                                    }
                                 </div>
-                                : <a href="/login" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Login</a>}
-
-                            {flag ? null : <a href="/singup" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}
+                                <div>
+                                    {flag ? null : <a href="/singup" className='block px-4 py-2 rounded-lg text-2xl hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}
+                                </div>
+                            </div>
                         </div>
                         <div
                             className='h-12 w-12 -mt-[4px] -mr-9 border-[0.5px] border-neutral-800 rounded-full relative'

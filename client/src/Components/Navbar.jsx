@@ -104,7 +104,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className='md:hidden mt-7'>
+            <div className='md:hidden absolute right-0 mt-4'>
                 <div className='flex'>
                     <div>
                         {flag ?
@@ -112,11 +112,11 @@ export default function Navbar() {
                                 <h1 className='text-xl'>Signout</h1>
                             </div>
                             :
-                            <a href="/login" className='block px-4 py-1 rounded-lg hover:bg-neutral-800 text-xl hover:bg-opacity-45'>Login</a>
+                            <a href="/login" className='block px-4 py-1 rounded-lg hover:bg-neutral-800 text-lg hover:bg-opacity-45'>Login</a>
                         }
                     </div>
                     <div>
-                        {flag ? null : <a href="/singup" className='block px-4 py-1 rounded-lg text-xl hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}
+                        {flag ? null : <a href="/singup" className='block px-4 py-1 rounded-lg text-lg hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}
                     </div>
                 </div>
             </div>

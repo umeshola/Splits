@@ -115,7 +115,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className='md:hidden absolute right-0 mt-4 -mr-12'>
+            <div className='md:hidden absolute right-0 mt-4 -mr-16'>
                 <div>
                     <div>
                         {flag ? null : <a href="/singup" className='block px-4 py-1 rounded-lg text-lg hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}

@@ -52,7 +52,7 @@ export default function Navbar() {
                                 </svg>
                             </button>
                         </div>
-                        <div className='sm:hidden'>
+                        <div className=' hidden md:block'>
                             {flag ?
                                 <div onClick={signout} className='block px-4 py-2 cursor-pointer rounded-lg hover:bg-red-900 hover:bg-opacity-35'>
                                     <h1>Signout</h1>

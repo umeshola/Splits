@@ -18,16 +18,16 @@ export default function Disney() {
         // Update the price based on the selected member count
         switch (member) {
             case 2:
-                setPrice(219);
+                setPrice(159);
                 break;
             case 3:
-                setPrice(179);
+                setPrice(109);
                 break;
             case 4:
-                setPrice(129);
+                setPrice(79);
                 break;
             default:
-                setPrice(219);
+                setPrice(159);
         }
     }, [member]);
     const handleMemberChange = (event) => {
@@ -90,7 +90,7 @@ export default function Disney() {
                         Ldevice: 2,
                         Ddevice: 2,
                         quality: "1080p HD",
-                        price: 199
+                        price: 169
                     }
                 }
             });
@@ -238,7 +238,7 @@ export default function Disney() {
                             <h1 className='text-[17px]'>Paying :</h1>
                         </div>
                         <div>
-                            <h1 className='text-[15px] mt-[3px] ml-2'>199.00</h1>
+                            <h1 className='text-[15px] mt-[3px] ml-2'>169.00</h1>
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
@@ -320,7 +320,7 @@ export default function Disney() {
                             </div>
                             <div className='flex'>
                                 <div>
-                                    <h1 className='text-[18px] sm:text-[24px]'>₹199</h1>
+                                    <h1 className='text-[18px] sm:text-[24px]'>₹169</h1>
                                 </div>
                                 <div>
                                     <h1 className='text-neutral-500 text-[14px] mt-[5px] sm:mt-[11px] ml-[2px]'>/3month</h1>

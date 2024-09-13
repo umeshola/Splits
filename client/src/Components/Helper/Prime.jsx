@@ -19,19 +19,19 @@ export default function Prime() {
         // Update the price based on the selected member count
         switch (member1) {
             case 2:
-                setPrice1(199);
+                setPrice1(159);
                 break;
             case 3:
-                setPrice1(149);
+                setPrice1(109);
                 break;
             case 4:
-                setPrice1(119);
+                setPrice1(79);
                 break;
             case 5:
-                setPrice1(99);
+                setPrice1(69);
                 break;
             default:
-                setPrice1(199);
+                setPrice1(159);
         }
     }, [member1]);
     const [loading, setLoading] = useState(false);
@@ -58,19 +58,19 @@ export default function Prime() {
         // Update the price based on the selected member count
         switch (member2) {
             case 2:
-                setPrice2(899);
+                setPrice2(799);
                 break;
             case 3:
-                setPrice2(699);
+                setPrice2(549);
                 break;
             case 4:
-                setPrice2(499);
-                break;
-            case 5:
                 setPrice2(399);
                 break;
+            case 5:
+                setPrice2(349);
+                break;
             default:
-                setPrice2(899);
+                setPrice2(799);
         }
     }, [member2]);
     const handleMemberChange2 = (event) => {

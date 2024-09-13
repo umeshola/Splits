@@ -58,7 +58,7 @@ export default function Sony() {
                         Ldevice: 2,
                         Ddevice: 2,
                         quality: "4K + HDR",
-                        price: 899
+                        price: 799
                     }
                 }
             });
@@ -124,7 +124,7 @@ export default function Sony() {
                             <h1 className='text-[17px]'>Paying :</h1>
                         </div>
                         <div>
-                            <h1 className='text-[15px] mt-[3px] ml-2'>899.00</h1>
+                            <h1 className='text-[15px] mt-[3px] ml-2'>799.00</h1>
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
@@ -160,7 +160,7 @@ export default function Sony() {
                             </div>
                             <div className='flex'>
                                 <div>
-                                    <h1 className='text-[18px] sm:text-[24px]'>₹899</h1>
+                                    <h1 className='text-[18px] sm:text-[24px]'>₹799</h1>
                                 </div>
                                 <div>
                                     <h1 className='text-neutral-500 text-[14px] sm:mt-[11px] mt-[5px] ml-[2px]'>/year</h1>

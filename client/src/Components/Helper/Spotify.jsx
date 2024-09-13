@@ -18,22 +18,22 @@ export default function Spotify() {
         // Update the price based on the selected member count
         switch (member) {
             case 2:
-                setPrice(119);
+                setPrice(99);
                 break;
             case 3:
-                setPrice(89);
-                break;
-            case 4:
                 setPrice(69);
                 break;
-            case 5:
-                setPrice(59);
-                break;
-            case 6:
+            case 4:
                 setPrice(49);
                 break;
+            case 5:
+                setPrice(39);
+                break;
+            case 6:
+                setPrice(29);
+                break;
             default:
-                setPrice(119);
+                setPrice(99);
         }
     }, [member]);
     const handleMemberChange = (event) => {
@@ -96,7 +96,7 @@ export default function Spotify() {
                         Ldevice: 2,
                         Ddevice: 2,
                         quality: "Best",
-                        price: 99
+                        price: 79
                     }
                 }
             });
@@ -243,7 +243,7 @@ export default function Spotify() {
                             <h1 className='text-[17px]'>Paying :</h1>
                         </div>
                         <div>
-                            <h1 className='text-[15px] mt-[3px] ml-2'>199.00</h1>
+                            <h1 className='text-[15px] mt-[3px] ml-2'>79.00</h1>
                         </div>
                     </div>
                     <div className='text-neutral-400 ml-[55px] max-w-[250px]'>
@@ -326,7 +326,7 @@ export default function Spotify() {
                                 </div>
                                 <div className='flex'>
                                     <div>
-                                        <h1 className='text-[18px] sm:text-[24px]'>₹99</h1>
+                                        <h1 className='text-[18px] sm:text-[24px]'>₹79</h1>
                                     </div>
                                     <div>
                                         <h1 className='text-neutral-500 text-[14px] mt-[11px] ml-[2px]'>/month</h1>

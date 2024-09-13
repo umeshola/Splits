@@ -98,23 +98,25 @@ export default function Navbar() {
                                     <a href="/profile" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Profile</a>
                                     <a href="/waiting" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Waiting</a>
                                     <a href="/contact" className='block px-4 py-2 rounded-lg hover:bg-neutral-800 hover:bg-opacity-45'>Contact</a>
+                                    <div className='md:hidden'>
+                                        {flag ?
+                                            <div onClick={signout} className='block px-4 py-1 cursor-pointer rounded-lg hover:bg-red-900 hover:bg-opacity-35'>
+                                                <h1 className='text-2xl'>Signout</h1>
+                                            </div>
+                                            :
+                                            <a href="/login" className='block px-4 py-1 rounded-lg hover:bg-neutral-800 text-2xl hover:bg-opacity-45'>Login</a>
+                                        }
+                                        {flag ? null : <a href="/singup" className='block px-4 py-1 rounded-lg text-2xl hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}
+                                    </div>
+
                                 </div>
                             )}
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='md:hidden absolute right-0 mt-4'>
-                <div className='flex'>
-                    <div>
-                        {flag ?
-                            <div onClick={signout} className='block px-4 py-1 cursor-pointer rounded-lg hover:bg-red-900 hover:bg-opacity-35'>
-                                <h1 className='text-xl'>Signout</h1>
-                            </div>
-                            :
-                            <a href="/login" className='block px-4 py-1 rounded-lg hover:bg-neutral-800 text-lg hover:bg-opacity-45'>Login</a>
-                        }
-                    </div>
+            <div className='md:hidden absolute right-0 mt-4 -mr-12'>
+                <div>
                     <div>
                         {flag ? null : <a href="/singup" className='block px-4 py-1 rounded-lg text-lg hover:bg-neutral-800 hover:bg-opacity-45'>Signup</a>}
                     </div>

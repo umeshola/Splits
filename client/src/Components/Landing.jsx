@@ -104,7 +104,7 @@ export default function Landing() {
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M5 12l5 5l10 -10" />
                             </svg>
-                            <h2 className='xl:text-xl 2xl:text-2xl text-neutral-400 font-light'>1.2k user joined with us</h2>
+                            <h2 className='xl:text-xl 2xl:text-2xl text-neutral-400 font-light'>500+ user joined with us</h2>
                         </div>
 
                     </div>
@@ -211,7 +211,7 @@ export default function Landing() {
                 </div>
                 <div className=' md:flex sm:ml-24 md:ml-0 -ml-6 md:justify-center mt-20'>
                     <div className='h-[100px]  sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[180px] 2xl:h-[200px] border-neutral-900 border-[1.3px] mx-4 sm:mx-8 w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] xl:w-[280px] 2xl:w-[300px] rounded-xl bg-neutral-800 bg-opacity-45 flex flex-col items-center justify-center'>
-                        <h1 className='text-3xl font-medium text-center text-white'>200+</h1>
+                        <h1 className='text-3xl font-medium text-center text-white'>170+</h1>
                         <h2 className='text-md text-center font-extralight text-white'>Happy User</h2>
                     </div>
                     <div className='h-[100px] my-5 md:my-0 sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[180px] 2xl:h-[200px] border-neutral-900 border-[1.3px] mx-4 sm:mx-8 w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] xl:w-[280px] 2xl:w-[300px] rounded-xl bg-neutral-800 bg-opacity-45 flex flex-col items-center justify-center'>
